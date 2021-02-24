@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fisika_1"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="46dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/soalf1"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sebuah rangkaian listrik dengan sumber tegangan V memiliki kuat arus 6 A. Jika hambatan dibuat tetap, sedangkan sumber tegangan dinaikkan menjadi 2V, maka kuat arus akan menjadi  ??"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3">
+
+        <TextView
+            android:id="@+id/soalf2"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Terdapat dua buah muatan dengan muatan masing-masing +3 µC dan -3 µC. Kedua muatan terpisah sejauh 3 cm. Besar dan jenis gaya Coulomb antara kedua muatan tersebut adalah ??"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="#000000"
+        android:onClick="lembarf1"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup9"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup9"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+        <RadioButton
+            android:id="@+id/f2c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="2.250 N dan tarik menarik" />
+
+        <RadioButton
+            android:id="@+id/f2e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90 N dan tarik menarik"
+            android:textColor="#FFEB3B" />
+
+        <RadioButton
+            android:id="@+id/f2a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.700 N dan tarik menarik" />
+
+        <RadioButton
+            android:id="@+id/f2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90 N dan tolak menolak" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <RadioButton
+            android:id="@+id/f1c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11 A" />
+
+        <RadioButton
+            android:id="@+id/f1b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 A" />
+
+        <RadioButton
+            android:id="@+id/f1a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 A"
+            android:textColor="#FFEB3B" />
+
+        <RadioButton
+            android:id="@+id/f1d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17 A" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/black"
+        android:onClick="lembarf1back"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup9"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

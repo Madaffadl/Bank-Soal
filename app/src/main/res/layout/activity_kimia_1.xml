@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kimia_1"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:id="@+id/linearLayout17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="46dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/soalk1"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="Molalitas suatu larutan yang mengandung 20% berat C2H5OH (Mr = 46) adalah..."
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup5">
+
+        <TextView
+            android:id="@+id/soalk2"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="Banyaknya MgSO4 (Mr = 120) yang dilarutkan dalam 400 gram air untuk membuat larutan 0,5 m adalah... ??"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="#000000"
+        android:onClick="lembark1"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup12"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup12"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout21">
+
+        <RadioButton
+            android:id="@+id/k2e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32 gram" />
+
+        <RadioButton
+            android:id="@+id/k2d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 gram"
+            android:textColor="#FFEB3B" />
+
+        <RadioButton
+            android:id="@+id/k2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="66 gram" />
+
+        <RadioButton
+            android:id="@+id/k2a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 gram" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout17">
+
+        <RadioButton
+            android:id="@+id/k1d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5,4 m"
+            android:textColor="#FFEB3B" />
+
+        <RadioButton
+            android:id="@+id/k1b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7,2 m" />
+
+        <RadioButton
+            android:id="@+id/k1e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5,8 m" />
+
+        <RadioButton
+            android:id="@+id/k1a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4,9 m" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/black"
+        android:onClick="lembark1back"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup12"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

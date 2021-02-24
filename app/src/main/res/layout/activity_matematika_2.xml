@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="b"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Matematika_2"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:id="@+id/linearLayout37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/soalm3"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="Perbandingan uang Gunawan dan uang Chacha adalah 3 : 2. Jika uang Gunawan dan Chacha berjumlah Rp. 150.000, berapa masing-masing uang Gunawan dan Chacha ?"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout37">
+
+        <RadioButton
+            android:id="@+id/m3d"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="80.000" />
+
+        <RadioButton
+            android:id="@+id/m3c"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:text="90.000 &amp; 60.000"
+            android:textColor="#E4CE0D" />
+
+        <RadioButton
+            android:id="@+id/m3b"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="65.000" />
+
+        <RadioButton
+            android:id="@+id/m3e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50.000 &amp; 60.000" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <TextView
+            android:id="@+id/soalm4"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="Reinince mempunyai uang Rp. 4.500.000 dan ia berniat membeli sebuah handycam seharga Rp. 2.500.000 sebelum diskon. Harga diskon handycam  tersebut  adalah  20%.  Selain  itu,  Reinince  juga  membelanjakan uangnya untuk keperluan lain sebesar Rp. 1.500.000. Berapa sisa uang Reinince saat ini ?"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#000000"
+        android:text="Check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup8"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup8"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="208dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout41">
+
+        <RadioButton
+            android:id="@+id/m4a"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:text="Rp.800.000" />
+
+        <RadioButton
+            android:id="@+id/m4c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp.2.000.000" />
+
+        <RadioButton
+            android:id="@+id/m4b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp.1.200.000" />
+
+        <RadioButton
+            android:id="@+id/m4d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp.1.000.000"
+            android:textColor="#F4DC0A" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/black"
+        android:onClick="lembarm2back"
+        android:text="Back "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup8"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
